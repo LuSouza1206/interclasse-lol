@@ -1,50 +1,47 @@
-# Welcome to your Expo app 👋
+# Interclasse Digital - LTA Sul (LoL Edition) 🎮
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Projeto desenvolvido para o Checkpoint de **Mobile App Development** na FIAP. O aplicativo é um hub completo para torcedores de League of Legends, focado na liga LTA Sul, com funcionalidades de personalização, acompanhamento de jogos e integração com APIs.
 
-## Get started
+---
 
-1. Install dependencies
+## 👥 Integrantes
+* **Nome:** [SEU NOME AQUI] - **RM:** [SEU RM AQUI]
 
+---
+
+## 🚀 Tecnologias Utilizadas
+* **React Native / Expo:** Framework base do projeto.
+* **React Navigation:** Navegação por abas (Bottom Tabs).
+* **Axios:** Integração com APIs REST (GET e POST).
+* **Async Storage:** Persistência de dados locais do usuário.
+* **Expo Vector Icons:** Iconografia do app.
+
+---
+
+## 🛠️ Funcionalidades e Requisitos Técnicos
+
+### 1. Perfil do Usuário (Persistência)
+* **Customização:** Alteração de Nome de Invocador, escolha de Jogador Favorito e Time Favorito via Modais.
+* **Foto de Perfil:** Seleção de ícones clássicos do LoL.
+* **AsyncStorage:** Todos os dados do perfil (incluindo a preferência de notificações) são salvos localmente e permanecem mesmo após fechar o app.
+
+### 2. Calendário de Jogos
+* Exibição das rodadas com horários e locais.
+* Sistema de **Lembrete Ativo** que utiliza AsyncStorage para salvar as partidas que o usuário deseja acompanhar.
+
+### 3. Tabela de Classificação
+* Lista dinâmica com a pontuação da temporada regular.
+* Destaque visual (Dourado) para os times na zona de classificação (Playoffs).
+
+### 4. Gestão de Times (Integração API)
+* **GET:** Consumo de API real (`reqres.in`) para listar a line-up/staff do time.
+* **POST 1:** Formulário de recrutamento de novos torcedores/integrantes.
+* **POST 2:** Sistema de sugestão de novos Coaches para a equipe.
+* **Tratamento de Erros:** Implementação de `ActivityIndicator` para carregamento e dados de backup (Fallback) em caso de falha na conexão.
+
+---
+
+## 📦 Como rodar o projeto
+1. Clone o repositório:
    ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+   git clone [https://github.com/LuSouza1206/interclasse-lol.git](https://github.com/LuSouza1206/interclasse-lol.git)
