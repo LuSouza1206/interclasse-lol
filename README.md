@@ -1,47 +1,47 @@
-# Interclasse Digital - LTA Sul (LoL Edition) 🎮
+Interclasse Digital - LoL Edition 
 
-Projeto desenvolvido para o Checkpoint de **Mobile App Development** na FIAP. O aplicativo é um hub completo para torcedores de League of Legends, focado na liga LTA Sul, com funcionalidades de personalização, acompanhamento de jogos e integração com APIs.
-
----
-
-## 👥 Integrantes
-* **Nome:** [SEU NOME AQUI] - **RM:** [SEU RM AQUI]
+Projeto desenvolvido para o Checkpoint de Mobile App Development. O aplicativo é um hub completo para torcedores de League of Legends, focado na liga LTA Sul, com funcionalidades de personalização, acompanhamento de jogos e gestão de dados locais.
 
 ---
 
-## 🚀 Tecnologias Utilizadas
-* **React Native / Expo:** Framework base do projeto.
-* **React Navigation:** Navegação por abas (Bottom Tabs).
-* **Axios:** Integração com APIs REST (GET e POST).
-* **Async Storage:** Persistência de dados locais do usuário.
-* **Expo Vector Icons:** Iconografia do app.
+Integrantes
+- Kaio Vinicius Meireles Alves - RM553282
+- Lucas Alves de Souza -  RM553956
 
 ---
 
-## 🛠️ Funcionalidades e Requisitos Técnicos
-
-### 1. Perfil do Usuário (Persistência)
-* **Customização:** Alteração de Nome de Invocador, escolha de Jogador Favorito e Time Favorito via Modais.
-* **Foto de Perfil:** Seleção de ícones clássicos do LoL.
-* **AsyncStorage:** Todos os dados do perfil (incluindo a preferência de notificações) são salvos localmente e permanecem mesmo após fechar o app.
-
-### 2. Calendário de Jogos
-* Exibição das rodadas com horários e locais.
-* Sistema de **Lembrete Ativo** que utiliza AsyncStorage para salvar as partidas que o usuário deseja acompanhar.
-
-### 3. Tabela de Classificação
-* Lista dinâmica com a pontuação da temporada regular.
-* Destaque visual (Dourado) para os times na zona de classificação (Playoffs).
-
-### 4. Gestão de Times (Integração API)
-* **GET:** Consumo de API real (`reqres.in`) para listar a line-up/staff do time.
-* **POST 1:** Formulário de recrutamento de novos torcedores/integrantes.
-* **POST 2:** Sistema de sugestão de novos Coaches para a equipe.
-* **Tratamento de Erros:** Implementação de `ActivityIndicator` para carregamento e dados de backup (Fallback) em caso de falha na conexão.
+Tecnologias Utilizadas
+* React Native / Expo: Framework base do projeto.
+* React Navigation: Navegação por abas (Bottom Tabs) e em pilha (Stack Navigator).
+* Async Storage: Persistência de dados locais do dispositivo.
+* Expo Vector Icons: Iconografia dinâmica do app.
 
 ---
 
-## 📦 Como rodar o projeto
+Funcionalidades e Requisitos Técnicos
+
+1. Perfil do Usuário (Persistência)
+* Customização: Alteração de Nome de Invocador, escolha de Jogador Favorito e Time Favorito via Modais interativos.
+* Foto de Perfil: Seleção de ícones clássicos do LoL (Poros, Pinguins, etc.).
+* AsyncStorage: Todos os dados do perfil (incluindo a preferência de notificações via Switch) são salvos localmente e permanecem mesmo após o app ser fechado.
+
+2. Calendário de Jogos
+* Exibição das rodadas com horários, times e locais.
+* Sistema de Lembrete Ativo que utiliza AsyncStorage para salvar e destacar as partidas que o usuário favoritou para acompanhar.
+
+3. Tabela de Classificação
+* Lista dinâmica com a pontuação da temporada regular e simulação de resultados.
+* Destaque visual (Dourado) para os times na zona de classificação (Top 4 - Playoffs).
+
+4. Gestão de Times (Navegação em Pilha)
+* Stack Navigation: Transição fluida entre a lista geral de times da LTA Sul e a tela de detalhes específicos da organização.
+* Detalhamento Local: Renderização do elenco oficial atualizado e história da equipe utilizando dados locais, garantindo carregamento instantâneo e offline.
+* Tratamento Visual: Implementação de `ActivityIndicator` (Loading) para simular busca de dados e melhorar a experiência do usuário (UX).
+
+---
+
+Como rodar o projeto
+
 1. Clone o repositório:
    ```bash
    git clone [https://github.com/LuSouza1206/interclasse-lol.git](https://github.com/LuSouza1206/interclasse-lol.git)
