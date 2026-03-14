@@ -54,18 +54,18 @@ Funcionalidades e Requisitos Técnicos
 * AsyncStorage: Todos os dados do perfil (incluindo a preferência de notificações via Switch) são salvos localmente e permanecem mesmo após o app ser fechado.
 
 2. Calendário de Jogos
-* Exibição das rodadas com horários, times e locais.
-* Sistema de Lembrete Ativo que utiliza AsyncStorage para salvar e destacar as partidas que o usuário favoritou para acompanhar.
+* Exibição das rodadas: Listagem com horários, times e locais das partidas.
+* Sistema de Lembrete Ativo: Utiliza AsyncStorage para salvar e destacar as partidas que o usuário favoritou para acompanhar.
 
 3. Tabela de Classificação
-* Lista dinâmica com a pontuação da temporada regular e simulação de resultados.
-* Destaque visual (Dourado) para os times na zona de classificação (Top 4 - Playoffs).
+* Lista dinâmica: Exibição da pontuação da temporada regular e simulação de resultados.
+* Destaque visual: Cor dourada para identificar os times na zona de classificação (Top 4 - Playoffs).
 
 4. Bilheteria e Ingressos (Integração API com Axios)
- *Consumo de API (GET): Listagem dinâmica de setores (Cadeira Inferior, Superior e VIP) e preços, consumindo dados de API externa com Axios.
-*Reserva de Ingressos (POST 1): Envio de formulário com nome do torcedor e setor selecionado, simulando a reserva de assentos na Arena.
-*Validação de Meia-Entrada (POST 2): Sistema de validação focado em estudantes FIAP, enviando o RM e o ID do pedido para aplicação de desconto.
-*Tratamento de Dados: Implementação de try/catch para gestão de erros de rede, ActivityIndicator para feedback de carregamento e Alerts nativos para confirmação das operações.
+* Consumo de API (GET): Listagem dinâmica de setores (Cadeira Inferior, Superior e VIP) e preços, consumindo dados de API externa com Axios.
+* Reserva de Ingressos (POST 1): Envio de formulário com nome do torcedor e setor selecionado via botões de escolha, simulando a reserva de assentos na Arena.
+* Validação de Meia-Entrada (POST 2): Sistema focado em estudantes FIAP, enviando o RM e o ID do pedido para aplicação de desconto.
+* Tratamento de Dados: Implementação de `try/catch` para gestão de erros de rede, `ActivityIndicator` para feedback de carregamento e `Alerts` nativos para confirmação das operações.
 
 ---
 
