@@ -19,13 +19,13 @@ Assista ao vídeo de apresentação do aplicativo e explicação do código:
 Telas do Aplicativo
 Abaixo estão as capturas de tela das principais funcionalidades do aplicativo:
 
-![Tela de Perfil]
+![Image](https://github.com/user-attachments/assets/6a0a2ce2-99a6-40a4-a203-3e6f9a080d59)
 
-![Calendário]
+![Image](https://github.com/user-attachments/assets/0530f2f8-c371-40da-b767-e5b9c05891df)
 
-![Tabela]
+![Image](https://github.com/user-attachments/assets/ff86f47a-74f1-4771-a69d-96788fad5ded)
 
-![Detalhes do Time]
+![Image](https://github.com/user-attachments/assets/2d916ece-5f4e-4862-998b-e1f80630eed6)
 
 
 ---
@@ -33,9 +33,8 @@ Abaixo estão as capturas de tela das principais funcionalidades do aplicativo:
 Testes de API (Postman / Insomnia)
 Evidências dos testes de requisições realizados durante a construção inicial do projeto:
 
-*(Arraste as imagens dos prints de teste para cá)*
-![Teste GET](COLE_O_LINK_DA_IMAGEM_AQUI)
-![Teste POST](COLE_O_LINK_DA_IMAGEM_AQUI)
+![Image](https://github.com/user-attachments/assets/a562f8a4-ae29-4d88-90d9-c4ec489bb10b)
+![Image](https://github.com/user-attachments/assets/7c82125a-6f69-46e7-be75-5ab7c4a37406)
 
 ---
 
@@ -62,10 +61,11 @@ Funcionalidades e Requisitos Técnicos
 * Lista dinâmica com a pontuação da temporada regular e simulação de resultados.
 * Destaque visual (Dourado) para os times na zona de classificação (Top 4 - Playoffs).
 
-4. Gestão de Times (Navegação em Pilha)
-* Stack Navigation: Transição fluida entre a lista geral de times da LTA Sul e a tela de detalhes específicos da organização.
-* Detalhamento Local: Renderização do elenco oficial atualizado e história da equipe utilizando dados locais, garantindo carregamento instantâneo e offline.
-* Tratamento Visual: Implementação de `ActivityIndicator` (Loading) para simular busca de dados e melhorar a experiência do usuário (UX).
+4. Bilheteria e Ingressos (Integração API com Axios)
+ *Consumo de API (GET): Listagem dinâmica de setores (Cadeira Inferior, Superior e VIP) e preços, consumindo dados de API externa com Axios.
+*Reserva de Ingressos (POST 1): Envio de formulário com nome do torcedor e setor selecionado, simulando a reserva de assentos na Arena.
+*Validação de Meia-Entrada (POST 2): Sistema de validação focado em estudantes FIAP, enviando o RM e o ID do pedido para aplicação de desconto.
+*Tratamento de Dados: Implementação de try/catch para gestão de erros de rede, ActivityIndicator para feedback de carregamento e Alerts nativos para confirmação das operações.
 
 ---
 
