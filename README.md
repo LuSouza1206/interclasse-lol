@@ -12,7 +12,7 @@ Integrantes
 
 Demonstração do Projeto
 Assista ao vídeo de apresentação do aplicativo e explicação do código:
-[Clique aqui para assistir ao vídeo no YouTube/Drive](COLE_O_LINK_DO_SEU_VIDEO_AQUI)
+https://youtu.be/hmuywE8cz9I
 
 ---
 
