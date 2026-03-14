@@ -6,7 +6,36 @@ Projeto desenvolvido para o Checkpoint de Mobile App Development. O aplicativo �
 
 Integrantes
 - Kaio Vinicius Meireles Alves - RM553282
-- Lucas Alves de Souza -  RM553956
+- Lucas Alves de Souza - RM553956
+
+---
+
+Demonstração do Projeto
+Assista ao vídeo de apresentação do aplicativo e explicação do código:
+[Clique aqui para assistir ao vídeo no YouTube/Drive](COLE_O_LINK_DO_SEU_VIDEO_AQUI)
+
+---
+
+Telas do Aplicativo
+Abaixo estão as capturas de tela das principais funcionalidades do aplicativo:
+
+![Tela de Perfil]
+
+![Calendário]
+
+![Tabela]
+
+![Detalhes do Time]
+
+
+---
+
+Testes de API (Postman / Insomnia)
+Evidências dos testes de requisições realizados durante a construção inicial do projeto:
+
+*(Arraste as imagens dos prints de teste para cá)*
+![Teste GET](COLE_O_LINK_DA_IMAGEM_AQUI)
+![Teste POST](COLE_O_LINK_DA_IMAGEM_AQUI)
 
 ---
 
